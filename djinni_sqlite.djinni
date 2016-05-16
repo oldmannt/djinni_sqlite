@@ -14,5 +14,6 @@ todo_list = interface +c {
 }
 
 my_client_interface = interface +j +o {
+	static create():my_client_interface;
     log_string(str: string): bool;
 }

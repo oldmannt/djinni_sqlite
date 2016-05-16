@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "libdjinni_sqlite_objc",
-      "type": "static_library",
+      "type": "shared_library",
       "dependencies": [
         "./deps/djinni/support-lib/support_lib.gyp:djinni_objc",
         "./deps/sqlite3.gyp:sqlite3",

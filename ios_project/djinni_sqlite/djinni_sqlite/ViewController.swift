@@ -7,16 +7,17 @@
 //
 
 import UIKit
+import djinni_sqlite_objc
 
 class ViewController: UIViewController {
 
-    var logger_obj:ImplementForCpp?
+    var logger_obj:DSMyClientInterfaceSW?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        logger_obj = ImplementForCpp()
+        logger_obj = DSMyClientInterfaceSW()
         DSTodoList.setLogger(logger_obj)
         
         var todo_list = DSTodoList.createWithPath("fire")

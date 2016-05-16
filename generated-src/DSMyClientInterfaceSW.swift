@@ -8,8 +8,12 @@
 
 import Foundation
 
+public
 class DSMyClientInterfaceSW:DSMyClientInterface{
-    @objc func logString(str: String) -> Bool{
+    public init(){
+        
+    }
+    @objc public func logString(str: String) -> Bool{
         print("DSMyClientInterface \(str)")
         return true
     }

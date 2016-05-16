@@ -14,11 +14,9 @@
 		3380C5141CE8317800AEA910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3380C5121CE8317800AEA910 /* LaunchScreen.storyboard */; };
 		3380C51F1CE8317800AEA910 /* djinni_sqliteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380C51E1CE8317800AEA910 /* djinni_sqliteTests.swift */; };
 		3380C52A1CE8317800AEA910 /* djinni_sqliteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380C5291CE8317800AEA910 /* djinni_sqliteUITests.swift */; };
-		3380C53E1CE839A000AEA910 /* libdjinni_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3380C53B1CE839A000AEA910 /* libdjinni_objc.a */; };
-		3380C53F1CE839A000AEA910 /* libdjinni_sqlite_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3380C53C1CE839A000AEA910 /* libdjinni_sqlite_objc.a */; };
-		3380C5401CE839A000AEA910 /* libsqlite3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3380C53D1CE839A000AEA910 /* libsqlite3.a */; };
 		3380C5431CE83E3B00AEA910 /* forAvoidStdLinkErr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3380C5421CE83E3B00AEA910 /* forAvoidStdLinkErr.cpp */; };
 		3380C54D1CE847AE00AEA910 /* ImplementForCpp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380C54C1CE847AE00AEA910 /* ImplementForCpp.swift */; };
+		3380C57D1CE9827600AEA910 /* libdjinni_sqlite_objc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3380C57C1CE9827600AEA910 /* libdjinni_sqlite_objc.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +50,10 @@
 		3380C5251CE8317800AEA910 /* djinni_sqliteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = djinni_sqliteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3380C5291CE8317800AEA910 /* djinni_sqliteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = djinni_sqliteUITests.swift; sourceTree = "<group>"; };
 		3380C52B1CE8317800AEA910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3380C53B1CE839A000AEA910 /* libdjinni_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_objc.a; path = "../../deps/djinni/support-lib/build/Debug-iphoneos/libdjinni_objc.a"; sourceTree = "<group>"; };
-		3380C53C1CE839A000AEA910 /* libdjinni_sqlite_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_sqlite_objc.a; path = "../../build/Debug-iphoneos/libdjinni_sqlite_objc.a"; sourceTree = "<group>"; };
-		3380C53D1CE839A000AEA910 /* libsqlite3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsqlite3.a; path = "../../deps/build/Debug-iphoneos/libsqlite3.a"; sourceTree = "<group>"; };
 		3380C5411CE83E3A00AEA910 /* djinni_sqlite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "djinni_sqlite-Bridging-Header.h"; sourceTree = "<group>"; };
 		3380C5421CE83E3B00AEA910 /* forAvoidStdLinkErr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = forAvoidStdLinkErr.cpp; sourceTree = "<group>"; };
 		3380C54C1CE847AE00AEA910 /* ImplementForCpp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImplementForCpp.swift; sourceTree = "<group>"; };
+		3380C57C1CE9827600AEA910 /* libdjinni_sqlite_objc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdjinni_sqlite_objc.dylib; path = "../../build/Debug-iphoneos/libdjinni_sqlite_objc.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3380C53E1CE839A000AEA910 /* libdjinni_objc.a in Frameworks */,
-				3380C53F1CE839A000AEA910 /* libdjinni_sqlite_objc.a in Frameworks */,
-				3380C5401CE839A000AEA910 /* libsqlite3.a in Frameworks */,
+				3380C57D1CE9827600AEA910 /* libdjinni_sqlite_objc.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +85,7 @@
 		3380C4FD1CE8317800AEA910 = {
 			isa = PBXGroup;
 			children = (
-				3380C53B1CE839A000AEA910 /* libdjinni_objc.a */,
-				3380C53C1CE839A000AEA910 /* libdjinni_sqlite_objc.a */,
-				3380C53D1CE839A000AEA910 /* libsqlite3.a */,
+				3380C57C1CE9827600AEA910 /* libdjinni_sqlite_objc.dylib */,
 				3380C5081CE8317800AEA910 /* djinni_sqlite */,
 				3380C51D1CE8317800AEA910 /* djinni_sqliteTests */,
 				3380C5281CE8317800AEA910 /* djinni_sqliteUITests */,
