@@ -1,0 +1,18 @@
+todo = record {
+    id: i32;
+    label: string;
+    completed: i32;
+}
+
+todo_list = interface +c {
+    static create_with_path(path: string): todo_list;
+    static set_logger(logger:my_client_interface);
+    get_todos(): list<todo>;
+    add_todo(label: string): i32;
+    update_todo_completed(id: i32, completed: i32): bool;
+    delete_todo(id: i32): bool;
+}
+
+my_client_interface = interface +j +o {
+    log_string(str: string): bool;
+}

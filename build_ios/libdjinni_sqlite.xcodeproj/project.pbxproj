@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D0689ED5D1F8084DD4B3AF0F /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3E921D52B345D418F21C902A /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				4C2E621CF80B9F3EF5D48886 /* PBXTargetDependency */,
+				5D3CF8271D4905D3FDBB8D79 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		08995A6BE19E111EEEE3E7AE /* libdjinni_jni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E622B930DB3B3E502198187 /* libdjinni_jni.a */; };
+		1E916FB88EA793F1CB7DFD14 /* DSMyClientInterface+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0516EAC454634B418985AD6E /* DSMyClientInterface+Private.mm */; };
+		43A5E965A3E2F769C4EEE293 /* libsqlite3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB2BAE220B564914F951BD2 /* libsqlite3.a */; };
+		4804041BE6CB7531BE989BD2 /* NativeMyClientInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0D357BBC7C03F87676D391C /* NativeMyClientInterface.cpp */; };
+		608896AE0752F9D1F6EA2163 /* todo_list_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC6CE8A8735294A0FD381D4D /* todo_list_impl.cpp */; };
+		658FAAFF81AD5065C13D1879 /* djinni_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50BF764B4FF5608E0956F493 /* djinni_main.cpp */; };
+		67BD414C33AB87786F938C4B /* NativeTodoList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA372B70B623B3AC6716768E /* NativeTodoList.cpp */; };
+		76EA50EB0CC871356BBE5FAA /* NativeTodo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D6479B40328C7AB677AA314 /* NativeTodo.cpp */; };
+		A49242CF98FD99D045636985 /* todo_list_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC6CE8A8735294A0FD381D4D /* todo_list_impl.cpp */; };
+		B3711C973196520D948A71E0 /* DSTodo+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = B97D59DE3591875E696E1C1C /* DSTodo+Private.mm */; };
+		E72D650E9C80349AA32CCCB7 /* DSTodo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14C7FCD330179FCDD495E120 /* DSTodo.mm */; };
+		ED261DB9B522BDDCD823565D /* DSTodoList+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = D3E689FBAE54EEB78865CEFB /* DSTodoList+Private.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		223BF07A6C9D73ED89A063E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B647C742294E05CE0A7536B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FD5675250F493F3D3A701D5;
+			remoteInfo = libdjinni_sqlite_jni;
+		};
+		2844C164D6EDC26699AF2A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 107D7EDEC37349496A4B7112 /* support_lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC658C749F521B13A5BDCBBC;
+			remoteInfo = djinni_jni;
+		};
+		9ACBF446351151A818B5CB60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDAA4E27F3CFEE0A0DEC41ED /* sqlite3.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E8C0CF30B4F67B456B17551;
+			remoteInfo = sqlite3;
+		};
+		9E59D0D843840A4ABF17A76A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B647C742294E05CE0A7536B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A5E2EB7649B0621E5A7149A;
+			remoteInfo = libdjinni_sqlite_objc;
+		};
+		EB038CC8A504393E47C7DAC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 107D7EDEC37349496A4B7112 /* support_lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C99AA4F95316AA552A79C55;
+			remoteInfo = djinni_objc;
+		};
+		FBC620073FC49003A6959130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDAA4E27F3CFEE0A0DEC41ED /* sqlite3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E48F2BBAC1B0A6856E26F26;
+			remoteInfo = sqlite3;
+		};
+		FC619B6AE45926B3A8589756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 107D7EDEC37349496A4B7112 /* support_lib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AD97C5F2356EF26110758A40;
+			remoteInfo = djinni_jni;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0516EAC454634B418985AD6E /* DSMyClientInterface+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSMyClientInterface+Private.mm"; sourceTree = "<group>"; };
+		0C5C2D6C17A7825D344633D3 /* DSTodoList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSTodoList.h; sourceTree = "<group>"; };
+		0FD5AF867A90403BF72A7718 /* todo_list_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = todo_list_impl.hpp; sourceTree = "<group>"; };
+		107D7EDEC37349496A4B7112 /* support_lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = support_lib.xcodeproj; path = "build_ios/deps/djinni/support-lib/support_lib.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		14C7FCD330179FCDD495E120 /* DSTodo.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DSTodo.mm; sourceTree = "<group>"; };
+		26226EABE2FA5A523799C96E /* libdjinni_sqlite.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = libdjinni_sqlite.gyp; sourceTree = "<group>"; };
+		280981934C0B6D35856E47A2 /* DSMyClientInterface+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSMyClientInterface+Private.h"; sourceTree = "<group>"; };
+		332AE3BFC04657DE9D29F030 /* my_client_interface.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = my_client_interface.hpp; sourceTree = "<group>"; };
+		50BF764B4FF5608E0956F493 /* djinni_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = djinni_main.cpp; sourceTree = "<group>"; };
+		52DC87BCE66E98E1F75917B7 /* libdjinni_sqlite_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdjinni_sqlite_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6479B40328C7AB677AA314 /* NativeTodo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeTodo.cpp; sourceTree = "<group>"; };
+		6F0E629B10B08E74C9C5D75C /* DSTodo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSTodo.h; sourceTree = "<group>"; };
+		71C3BB4A09B0942C9B22B1B6 /* todo_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = todo_list.hpp; sourceTree = "<group>"; };
+		8E7952D53F247E62B572EF88 /* libdjinni_sqlite_jni.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdjinni_sqlite_jni.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27D7AB5F58A319F71219341 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = deps/djinni/common.gypi; sourceTree = "<group>"; };
+		B0D357BBC7C03F87676D391C /* NativeMyClientInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeMyClientInterface.cpp; sourceTree = "<group>"; };
+		B97D59DE3591875E696E1C1C /* DSTodo+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTodo+Private.mm"; sourceTree = "<group>"; };
+		CB05D26B9533C68B1ADD56AF /* DSMyClientInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSMyClientInterface.h; sourceTree = "<group>"; };
+		CDAA4E27F3CFEE0A0DEC41ED /* sqlite3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlite3.xcodeproj; path = build_ios/deps/sqlite3.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D3E689FBAE54EEB78865CEFB /* DSTodoList+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DSTodoList+Private.mm"; sourceTree = "<group>"; };
+		D9FAFCCF7462AA60D9619136 /* DSTodo+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSTodo+Private.h"; sourceTree = "<group>"; };
+		DA372B70B623B3AC6716768E /* NativeTodoList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeTodoList.cpp; sourceTree = "<group>"; };
+		EC6CE8A8735294A0FD381D4D /* todo_list_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = todo_list_impl.cpp; sourceTree = "<group>"; };
+		FB291474EE0D1A76AD2EAB25 /* DSTodoList+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSTodoList+Private.h"; sourceTree = "<group>"; };
+		FBD81BDCEBF227543C81C657 /* todo.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = todo.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2B10278632AE6E92C6A7F53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08995A6BE19E111EEEE3E7AE /* libdjinni_jni.a in Frameworks */,
+				43A5E965A3E2F769C4EEE293 /* libsqlite3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5FD5C8F9E5EE12241A19B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27A51A2BDB8B1116DA87B749 = {
+			isa = PBXGroup;
+			children = (
+				A8F9534BA804402502DD3F9F /* Source */,
+				D2312EE18DA9381D18137E77 /* Projects */,
+				CC76A5E9E72A16DDCF60C1F3 /* Products */,
+				F4595DDCDD49346026D2ACD6 /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		291A8DFAA1070CBCE7C2181D /* generated-src */ = {
+			isa = PBXGroup;
+			children = (
+				9E4153658A9244DE150738D4 /* cpp */,
+				89D469143D301A54ED6594B1 /* jni */,
+				E0661D62C03384227B7B3A7C /* objc */,
+			);
+			path = "generated-src";
+			sourceTree = "<group>";
+		};
+		3380C5621CE864D000AEA910 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = swift;
+			sourceTree = "<group>";
+		};
+		7462A6F5CBF93EF04DE9ADA4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CE8A8735294A0FD381D4D /* todo_list_impl.cpp */,
+				0FD5AF867A90403BF72A7718 /* todo_list_impl.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		805C2E63BFBAD693E8BBCC90 /* deps/djinni/support-lib/jni */ = {
+			isa = PBXGroup;
+			children = (
+				50BF764B4FF5608E0956F493 /* djinni_main.cpp */,
+			);
+			path = "deps/djinni/support-lib/jni";
+			sourceTree = "<group>";
+		};
+		89D469143D301A54ED6594B1 /* jni */ = {
+			isa = PBXGroup;
+			children = (
+				B0D357BBC7C03F87676D391C /* NativeMyClientInterface.cpp */,
+				5D6479B40328C7AB677AA314 /* NativeTodo.cpp */,
+				DA372B70B623B3AC6716768E /* NativeTodoList.cpp */,
+			);
+			path = jni;
+			sourceTree = "<group>";
+		};
+		9C9BCF8E98ADCEF755888AAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E622B930DB3B3E502198187 /* libdjinni_jni.a */,
+				DCFD2EBBEAF2979D753CFB84 /* libdjinni_objc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E4153658A9244DE150738D4 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				332AE3BFC04657DE9D29F030 /* my_client_interface.hpp */,
+				FBD81BDCEBF227543C81C657 /* todo.hpp */,
+				71C3BB4A09B0942C9B22B1B6 /* todo_list.hpp */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		A8F9534BA804402502DD3F9F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3380C5621CE864D000AEA910 /* swift */,
+				805C2E63BFBAD693E8BBCC90 /* deps/djinni/support-lib/jni */,
+				291A8DFAA1070CBCE7C2181D /* generated-src */,
+				7462A6F5CBF93EF04DE9ADA4 /* src */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		CC76A5E9E72A16DDCF60C1F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52DC87BCE66E98E1F75917B7 /* libdjinni_sqlite_objc.a */,
+				8E7952D53F247E62B572EF88 /* libdjinni_sqlite_jni.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2312EE18DA9381D18137E77 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				CDAA4E27F3CFEE0A0DEC41ED /* sqlite3.xcodeproj */,
+				107D7EDEC37349496A4B7112 /* support_lib.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		DB0E5633EBF615B2F8F2DCE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2BAE220B564914F951BD2 /* libsqlite3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0661D62C03384227B7B3A7C /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				280981934C0B6D35856E47A2 /* DSMyClientInterface+Private.h */,
+				0516EAC454634B418985AD6E /* DSMyClientInterface+Private.mm */,
+				CB05D26B9533C68B1ADD56AF /* DSMyClientInterface.h */,
+				D9FAFCCF7462AA60D9619136 /* DSTodo+Private.h */,
+				B97D59DE3591875E696E1C1C /* DSTodo+Private.mm */,
+				6F0E629B10B08E74C9C5D75C /* DSTodo.h */,
+				14C7FCD330179FCDD495E120 /* DSTodo.mm */,
+				FB291474EE0D1A76AD2EAB25 /* DSTodoList+Private.h */,
+				D3E689FBAE54EEB78865CEFB /* DSTodoList+Private.mm */,
+				0C5C2D6C17A7825D344633D3 /* DSTodoList.h */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		F4595DDCDD49346026D2ACD6 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				A27D7AB5F58A319F71219341 /* common.gypi */,
+				26226EABE2FA5A523799C96E /* libdjinni_sqlite.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FD5675250F493F3D3A701D5 /* libdjinni_sqlite_jni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D5C8395F5503BC3BC7DE3A /* Build configuration list for PBXNativeTarget "libdjinni_sqlite_jni" */;
+			buildPhases = (
+				72008C82ACD5D3539CF8CC38 /* Sources */,
+				F2B10278632AE6E92C6A7F53 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				022C776BFFE93C401CB08FB5 /* PBXTargetDependency */,
+				E7FDBC43908F660864ECF5DE /* PBXTargetDependency */,
+			);
+			name = libdjinni_sqlite_jni;
+			productName = djinni_sqlite_jni;
+			productReference = 8E7952D53F247E62B572EF88 /* libdjinni_sqlite_jni.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		6A5E2EB7649B0621E5A7149A /* libdjinni_sqlite_objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F95ED5B313C71C750361F659 /* Build configuration list for PBXNativeTarget "libdjinni_sqlite_objc" */;
+			buildPhases = (
+				8D92BC82A8E0C71550D3829A /* Sources */,
+				FB5FD5C8F9E5EE12241A19B8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libdjinni_sqlite_objc;
+			productName = djinni_sqlite_objc;
+			productReference = 52DC87BCE66E98E1F75917B7 /* libdjinni_sqlite_objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B647C742294E05CE0A7536B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 0730;
+			};
+			buildConfigurationList = 61EE7C500C0D32E78B464595 /* Build configuration list for PBXProject "libdjinni_sqlite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27A51A2BDB8B1116DA87B749;
+			projectDirPath = ..;
+			projectReferences = (
+				{
+					ProductGroup = DB0E5633EBF615B2F8F2DCE5 /* Products */;
+					ProjectRef = CDAA4E27F3CFEE0A0DEC41ED /* sqlite3.xcodeproj */;
+				},
+				{
+					ProductGroup = 9C9BCF8E98ADCEF755888AAF /* Products */;
+					ProjectRef = 107D7EDEC37349496A4B7112 /* support_lib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D0689ED5D1F8084DD4B3AF0F /* All */,
+				6A5E2EB7649B0621E5A7149A /* libdjinni_sqlite_objc */,
+				4FD5675250F493F3D3A701D5 /* libdjinni_sqlite_jni */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6E622B930DB3B3E502198187 /* libdjinni_jni.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdjinni_jni.a;
+			remoteRef = 2844C164D6EDC26699AF2A57 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFB2BAE220B564914F951BD2 /* libsqlite3.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlite3.a;
+			remoteRef = FBC620073FC49003A6959130 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCFD2EBBEAF2979D753CFB84 /* libdjinni_objc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdjinni_objc.a;
+			remoteRef = EB038CC8A504393E47C7DAC1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72008C82ACD5D3539CF8CC38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658FAAFF81AD5065C13D1879 /* djinni_main.cpp in Sources */,
+				4804041BE6CB7531BE989BD2 /* NativeMyClientInterface.cpp in Sources */,
+				76EA50EB0CC871356BBE5FAA /* NativeTodo.cpp in Sources */,
+				67BD414C33AB87786F938C4B /* NativeTodoList.cpp in Sources */,
+				A49242CF98FD99D045636985 /* todo_list_impl.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D92BC82A8E0C71550D3829A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E916FB88EA793F1CB7DFD14 /* DSMyClientInterface+Private.mm in Sources */,
+				B3711C973196520D948A71E0 /* DSTodo+Private.mm in Sources */,
+				E72D650E9C80349AA32CCCB7 /* DSTodo.mm in Sources */,
+				ED261DB9B522BDDCD823565D /* DSTodoList+Private.mm in Sources */,
+				608896AE0752F9D1F6EA2163 /* todo_list_impl.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		022C776BFFE93C401CB08FB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = djinni_jni;
+			targetProxy = FC619B6AE45926B3A8589756 /* PBXContainerItemProxy */;
+		};
+		4C2E621CF80B9F3EF5D48886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A5E2EB7649B0621E5A7149A /* libdjinni_sqlite_objc */;
+			targetProxy = 9E59D0D843840A4ABF17A76A /* PBXContainerItemProxy */;
+		};
+		5D3CF8271D4905D3FDBB8D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FD5675250F493F3D3A701D5 /* libdjinni_sqlite_jni */;
+			targetProxy = 223BF07A6C9D73ED89A063E0 /* PBXContainerItemProxy */;
+		};
+		E7FDBC43908F660864ECF5DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlite3;
+			targetProxy = 9ACBF446351151A818B5CB60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03E77F82AD7EB0A172D97FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = All;
+				SWIFT_OBJC_BRIDGING_HEADER = "../All-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		08E24F3BBDD4897F3FD2ACE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Release;
+		};
+		183410C08BC5D541A0EC63AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = All;
+				SWIFT_OBJC_BRIDGING_HEADER = "../All-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		47753E071818C9404A36E608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"generated-src/objc",
+					"generated-src/cpp",
+					src,
+					deps,
+					deps/sqlite3,
+					"deps/djinni/support-lib/objc",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = djinni_sqlite_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OBJC_BRIDGING_HEADER = "../generated-src/libdjinni_sqlite_objc-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		685231FE8E0710981D11E3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"generated-src/jni",
+					"generated-src/cpp",
+					src,
+					deps,
+					deps/sqlite3,
+					"deps/djinni/support-lib/jni",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = djinni_sqlite_jni;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		8797D0276A9C26E916C2A800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Debug;
+		};
+		993E11C8B80A74C144728B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"generated-src/objc",
+					"generated-src/cpp",
+					src,
+					deps,
+					deps/sqlite3,
+					"deps/djinni/support-lib/objc",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = djinni_sqlite_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OBJC_BRIDGING_HEADER = "../generated-src/libdjinni_sqlite_objc-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9952523E295AB481BC0162B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"generated-src/jni",
+					"generated-src/cpp",
+					src,
+					deps,
+					deps/sqlite3,
+					"deps/djinni/support-lib/jni",
+				);
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = djinni_sqlite_jni;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E921D52B345D418F21C902A /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E77F82AD7EB0A172D97FAC /* Debug */,
+				183410C08BC5D541A0EC63AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		61EE7C500C0D32E78B464595 /* Build configuration list for PBXProject "libdjinni_sqlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8797D0276A9C26E916C2A800 /* Debug */,
+				08E24F3BBDD4897F3FD2ACE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		85D5C8395F5503BC3BC7DE3A /* Build configuration list for PBXNativeTarget "libdjinni_sqlite_jni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685231FE8E0710981D11E3B0 /* Debug */,
+				9952523E295AB481BC0162B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		F95ED5B313C71C750361F659 /* Build configuration list for PBXNativeTarget "libdjinni_sqlite_objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47753E071818C9404A36E608 /* Debug */,
+				993E11C8B80A74C144728B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B647C742294E05CE0A7536B8 /* Project object */;
+}
