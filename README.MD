@@ -116,7 +116,8 @@ http://mobilecpptutorials.com/todo-app-using-djinni-and-sqlite-part-3-android/
 
 	    }// model
         
-        
+android studio 2.2 preview, I going to try now
+http://android-developers.blogspot.com/2016/05/android-studio-22-preview-new-ui.html
 
 
 
