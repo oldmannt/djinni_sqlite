@@ -13,7 +13,7 @@ GypAndroid.mk: libdjinni_sqlite.gyp ./deps/djinni/support-lib/support_lib.gyp dj
 	ANDROID_BUILD_TOP=$(shell dirname `which ndk-build`) deps/gyp/gyp --depth=. -f android -DOS=android -Ideps/djinni/common.gypi ./libdjinni_sqlite.gyp --root-target=libdjinni_sqlite_jni
 
 android: GypAndroid.mk
-	cd android_project/TodoApp/ && ./gradlew app:assembleDebug
+	cd android_project/libdjinni_sqlite/ && ./gradlew app:assembleDebug
 	@echo "Apks produced at:"
 	@python deps/djinni/example/glob.py ./ '*.apk'
 

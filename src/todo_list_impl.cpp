@@ -5,7 +5,14 @@
 #include <string>
 #include <vector>
 #include <sqlite3.h>
-  
+
+#if defined  __APPLE_CC__
+#define USTD std
+#elif defined __ANDROID__
+#include "stl_util.hpp"
+#define USTD std_patch
+#endif
+
 namespace djinni_sqlite {
     
     std::string _path;
@@ -86,8 +93,8 @@ namespace djinni_sqlite {
     bool TodoListImpl::update_todo_completed(int32_t id, int32_t completed) {
         
         // update a record's status
-        sql = "UPDATE todos SET completed = " + std::to_string(completed) + " " \
-            "WHERE id = " + std::to_string(id) + ";";
+        sql = "UPDATE todos SET completed = " + USTD::to_string(completed) + " " \
+            "WHERE id = " + USTD::to_string(id) + ";";
         _handle_query(sql);
         
         return 1;
@@ -97,7 +104,7 @@ namespace djinni_sqlite {
     bool TodoListImpl::delete_todo(int32_t id) {
         
         // delete a record
-        sql = "DELETE FROM todos WHERE id = " + std::to_string(id) + ";";
+        sql = "DELETE FROM todos WHERE id = " + USTD::to_string(id) + ";";
         _handle_query(sql);
         
         return 1;

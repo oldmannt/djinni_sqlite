@@ -1,0 +1,79 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion 23
+        buildToolsVersion "23.0.3"
+
+        defaultConfig.with {
+            applicationId "fun.dyno.djinni_sqlite"
+            minSdkVersion.apiLevel 15
+            targetSdkVersion.apiLevel 23
+            versionCode 1
+            versionName "1.0"
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles.add(file("proguard-rules.pro"))
+            }
+        }
+
+        productFlavors {
+            create("flavor1") {
+                applicationId "fun.dyno.djinni_sqlite"
+            }
+        }
+
+        sources {
+            main {
+                jni {
+                    source {
+                        srcDirs = [
+                                "../../../deps/djinni/support-lib/jni",
+                                "../../../deps/sqlite3",
+                                "../../../generated-src/cpp",
+                                "../../../generated-src/jni",
+                                "../../../src"
+                        ]
+                    }
+                }
+
+                java {
+                    source {
+                        srcDirs = [
+                                "../../../generated-src/java",
+                                "src/main/java"
+                        ]
+                    }
+                }
+            }
+        }
+        ndk {
+            toolchain = "gcc"
+            toolchainVersion = "4.9"
+            moduleName = "libdjinni_sqlite_jni"
+            stl = "gnustl_shared"
+            cppFlags.add("-std=c++11")
+            cppFlags.add("-fexceptions")
+            cppFlags.add("-frtti")
+            cppFlags.add("-D_GLIBCXX_HAS_GTHREADS")
+            cppFlags.add("-I${file("../../../deps/djinni/support-lib")}".toString())
+            cppFlags.add("-I${file("../../../deps/djinni/support-lib/jni")}".toString())
+            cppFlags.add("-I${file("../../../deps/sqlite3/")}".toString())
+            // djinni src
+            cppFlags.add("-I${file("../../../generated-src/cpp")}".toString())
+            // app generated-src
+            cppFlags.add("-I${file("../../../generated-src/jni")}".toString())
+            // app generated-src
+            cppFlags.add("-I${file("../../../src/")}".toString())
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}

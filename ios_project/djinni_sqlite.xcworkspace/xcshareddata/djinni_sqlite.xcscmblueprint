@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5CF2005CEFE4B9A13185DD795B0311C32B044BD1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5CF2005CEFE4B9A13185DD795B0311C32B044BD1" : 0,
+    "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "28CBA91A-EB97-40F3-AC0D-420ABFE96639",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5CF2005CEFE4B9A13185DD795B0311C32B044BD1" : "djinni_sqlite\/",
+    "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B" : "djinni_sqlite\/deps\/djinni\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "djinni_sqlite",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios_project\/djinni_sqlite.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dropbox\/djinni.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oldmannt\/djinni_sqlite.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5CF2005CEFE4B9A13185DD795B0311C32B044BD1"
+    }
+  ]
+}
